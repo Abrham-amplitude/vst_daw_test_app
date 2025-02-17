@@ -1,6 +1,31 @@
-# vst_daw_test_app
+# VST DAW Test App
 
-A new Flutter project.
+A Flutter application that integrates with a custom VST plugin for DAW control.
+
+## Project Overview
+
+This project combines a Flutter MIDI controller app with a custom JUCE VST plugin, enabling MIDI control in professional DAWs.
+
+### Components
+
+1. **Flutter MIDI Controller App**
+
+   - Note control (48-72, C3-C5)
+   - Velocity control (0-127)
+   - MIDI Channel selection (1-16)
+   - Pitch Bend control (0-16383)
+   - Modulation control (0-127)
+   - Real-time MIDI message sending
+
+2. **JUCE VST Plugin**
+   - MIDI input reception
+   - Visual keyboard display
+   - Last note played display
+   - Pitch bend visualization
+   - Modulation visualization
+   - VST3 format compatible
+
+### Project Structure
 
 ## Getting Started
 
