@@ -1,4 +1,5 @@
 #include "PluginProcessor.h"
+#include "PluginEditor.h"
 
 VstPluginAudioProcessor::VstPluginAudioProcessor()
     : AudioProcessor(BusesProperties()

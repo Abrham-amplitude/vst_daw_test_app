@@ -1,6 +1,8 @@
 #pragma once
 #include <JuceHeader.h>
 
+class VstPluginAudioProcessorEditor;  // Forward declaration
+
 class VstPluginAudioProcessor : public juce::AudioProcessor {
 public:
     VstPluginAudioProcessor();
@@ -34,6 +36,6 @@ private:
     juce::String lastNotePlayed;
     int currentPitchBend = 8192;
     int currentModulation = 0;
-    friend class VstPluginAudioProcessorEditor;
+    
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(VstPluginAudioProcessor)
 }; 

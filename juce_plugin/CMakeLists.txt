@@ -12,19 +12,19 @@ endif()
 add_subdirectory(JUCE)
 
 juce_add_plugin(VSTPlugin
-    COMPANY_NAME "YourCompany"
+    COMPANY_NAME "Abrham Wendmeneh test"
     PLUGIN_MANUFACTURER_CODE Manu
     PLUGIN_CODE Vst1
     FORMATS VST3
     PRODUCT_NAME "VST Plugin"
-    COMPANY_WEBSITE "www.yourcompany.com"
-    COMPANY_EMAIL "your@email.com"
+    COMPANY_WEBSITE "www.test_abrham.com"
+    COMPANY_EMAIL "abrham.wendmeneh.13@email.com"
     IS_SYNTH FALSE
     NEEDS_MIDI_INPUT TRUE
     NEEDS_MIDI_OUTPUT FALSE
     IS_MIDI_EFFECT FALSE
     EDITOR_WANTS_KEYBOARD_FOCUS FALSE
-    COPY_PLUGIN_AFTER_BUILD TRUE
+    COPY_PLUGIN_AFTER_BUILD FALSE
 )
 
 target_sources(VSTPlugin
@@ -50,4 +50,6 @@ target_link_libraries(VSTPlugin
         juce::juce_recommended_config_flags
         juce::juce_recommended_lto_flags
         juce::juce_recommended_warning_flags
-) 
+)
+
+juce_generate_juce_header(VSTPlugin) 
