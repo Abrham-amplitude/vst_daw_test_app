@@ -23,6 +23,15 @@ class MidiMessage {
     );
   }
 
+  factory MidiMessage.noteOff(int note, int velocity, {int channel = 0}) {
+    return MidiMessage(
+      type: MidiMessageType.noteOff,
+      value1: note,
+      value2: velocity,
+      channel: channel,
+    );
+  }
+
   factory MidiMessage.pitchBend(int value, {int channel = 0}) {
     return MidiMessage(
       type: MidiMessageType.pitchBend,
